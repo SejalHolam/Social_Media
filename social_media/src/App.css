@@ -1,0 +1,75 @@
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.post-card {
+  margin: 20px 50px;
+}
+
+.content {
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 730px;
+}
+
+.hastags {
+  margin: 20px 3px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.delete-icon {
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 22px;
+}
+
+.reactions-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.heart-icon {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.heart-icon:active{
+transform: scale(1.3);
+color: red;
+}
+
+.reaction-count {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.form-content {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
