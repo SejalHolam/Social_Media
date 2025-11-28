@@ -5,7 +5,7 @@ const CreatePost = () => {
   const { addPost } = useContext(PostListContext);
 
   const userIdElement = useRef();
-  console.log(userIdElement)
+  console.log(userIdElement);
   const postTitleElement = useRef();
   const postContentElement = useRef();
   const imagesElement = useRef();
@@ -15,13 +15,18 @@ const CreatePost = () => {
     event.preventDefault();
 
     const userId = userIdElement.current.value;
-    // console.log(userId)
     const postTitle = postTitleElement.current.value;
     const postContent = postContentElement.current.value;
     const images = imagesElement.current.value.split(",");
     const hastags = hastagsElement.current.value
       .split(",")
       .map((tag) => tag.trim());
+
+    userIdElement.current.value = " ";
+    postTitleElement.current.value = " ";
+    postContentElement.current.value = " ";
+    imagesElement.current.value = " ";
+    hastagsElement.current.value = " ";
 
     addPost(userId, postTitle, postContent, images, hastags);
   };
